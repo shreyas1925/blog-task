@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+
+header > div {
+    padding-top: 20px;
+    padding-left: 135px;
+}
+nav > ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 137px;
+}
+
+nav > ul > li{
+    padding-left: 170px;
+    padding-bottom: 5px;
+    list-style-type:none;
+}
+
+.app__section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding:15px;
+    padding-left: 135px;   
+}
+
+.app__blocks{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+.app__blocks > div {
+    width: 320px;
+    height: 480px;
+    margin: 10px;
+    border: 1px solid #adb5bd;
+}
+
+.image__block{
+    height: 50%;
+    width:100%;
+}
+
+img{
+    width: 100%;
+    height: 16vw;
+    object-fit: cover;
+}
+
+.block__timestamp{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    font-size:small;
+    font-weight: 300;
+    color:#adb5bd
+}
+
+.block__description{
+    padding: 12px;
+}
+
+.block__description h2{
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.block__description p{
+    color:#6c757d
+}
+.block__icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.block__icons img{
+    width: 20px;
+    height: 20px;
+}
+
+.block__clap{
+    display: flex;
+}
+
+.block__clap p{
+    margin-left: 3px;
+    color:#6c757d
+}
+
+hr{
+    margin: auto;
+    width: 92% !important;
+}
+
+.logo__header h3{
+    font-style: italic;
+    font-weight: 100;
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px)
+{
+
+    .app__blocks > div {
+        flex: 100%;
+        margin: 10px;
+        max-width:600px;
+        max-height: 800px;
+        border: 1px solid #adb5bd;
+    }
+
+    img{
+        width: 100%;
+        height:50vw;
+        object-fit: cover;
+    }
+}
+
